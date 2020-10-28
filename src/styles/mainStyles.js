@@ -16,6 +16,11 @@ const mainStyles = makeStyles(theme => ({
 	spacer: {
 		flexGrow: 1,
 	},
+	roomName: {
+		color: '#fff',
+		fontWeight: 'bold',
+		textAlign: 'center',
+	},
 	feedbackButtonWrapper: {
 		width: 100,
 		cursor: 'pointer',
@@ -36,7 +41,7 @@ const mainStyles = makeStyles(theme => ({
 	},
 	feedbackButtonLabel: {
 		textAlign: 'center',
-		fontSize: '14px',
+		fontSize: '1.3rem',
 		userSelect: 'none',
 		paddingTop: '5px',
 	},
@@ -48,6 +53,24 @@ const mainStyles = makeStyles(theme => ({
 	sendButtonLabel: {
 		fontSize: '1.6rem',
 		fontWeight: 400,
+	},
+	submittedIconWrapper: {
+		width: '100%',
+		height: '100vh',
+		display: 'flex',
+		alignItems: 'center',
+		alignContent: 'center',
+		justifyContent: 'center',
+	},
+	submittedIconBg: {
+		display: 'flex',
+		alignItems: 'center',
+		justifyContent: 'center',
+		width: '300px',
+		height: '300px',
+		backgroundColor: '#fff',
+		borderRadius: '50%',
+		boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
 	}
 }));
 

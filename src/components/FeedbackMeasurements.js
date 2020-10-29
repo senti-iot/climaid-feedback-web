@@ -13,23 +13,22 @@ const FeedbackMeasurements = () => {
 	const [loading, setLoading] = useState(true);
 	const [measurements, setMeasurements] = useState(null);
 
-	const uuid = location.state.uuid;
 	const room = location.state.room;
 
 	useEffect(() => {
 		async function fetchData() {
-			let data = await getRoomMeasurements(uuid);
-			console.log(data);
+			let data = await getRoomMeasurements(room.device.deviceUuid);
+
 			if (data) {
 				setMeasurements(data);
 				setLoading(false);
 			}
 		}
 
-		if (uuid) {
+		if (room) {
 			fetchData();
 		}
-	}, [uuid]);
+	}, [room]);
 
 	return (
 		<div className={classes.background}>

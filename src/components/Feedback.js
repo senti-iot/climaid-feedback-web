@@ -25,6 +25,7 @@ const Feedback = () => {
 			setLoading(true);
 
 			let data = await getRoom(uuid);
+			console.log(data);
 			if (data) {
 				setRoom(data);
 				setLoading(false);

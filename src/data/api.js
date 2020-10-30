@@ -27,3 +27,8 @@ export const getRoomMeasurements = async (uuid) => {
 	let data = await climaidApi.get('/feedback/measurements/' + uuid).then(rs => rs.data);
 	return data;
 };
+
+export const postFeedback = async (postData) => {
+	let data = await climaidApi.post('/feedback', postData).then(rs => rs.data);
+	return data;
+};

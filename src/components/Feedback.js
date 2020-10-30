@@ -77,7 +77,7 @@ const Feedback = () => {
 						</Grid>
 
 						<Grid item xs={6} align="center">
-							<FeedbackButton key={4} type="noise" label="Larm" feedback={feedback} onClick={() => handleClick("noise")} />
+							<FeedbackButton key={4} type="noisy" label="Larm" feedback={feedback} onClick={() => handleClick("noisy")} />
 						</Grid>
 						<Grid item xs={6} align="center">
 							<FeedbackButton key={5} type="blinded" label="Blændet" feedback={feedback} onClick={() => handleClick("blinded")} />

@@ -13,7 +13,7 @@ const Alert = props => {
 			<DialogTitle id="alert-dialog-title">Fejl!</DialogTitle>
 			<DialogContent>
 				<DialogContentText id="alert-dialog-description">
-					Du skal vælge minimum en ting du oplever.
+					{props.text}
 				</DialogContentText>
 			</DialogContent>
 			<DialogActions>

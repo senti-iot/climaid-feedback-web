@@ -25,7 +25,7 @@ const Feedback = () => {
 			setLoading(true);
 
 			let data = await getRoom(uuid);
-			console.log(data);
+
 			if (data) {
 				setRoom(data);
 				setLoading(false);
@@ -110,7 +110,7 @@ const Feedback = () => {
 						</Grid>
 					</Grid>
 
-					<Alert open={alertShown} handleClose={handleAlertClose} />
+					<Alert open={alertShown} handleClose={handleAlertClose} text="Du skal vælge minimum en ting du oplever." />
 				</>
 				: <div style={{ width: '100%', height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center' }}><CircularProgress /></div>}
 		</div>

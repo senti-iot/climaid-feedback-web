@@ -45,7 +45,7 @@ const FeedbackSubmitted = () => {
 			postData["cold"] = feedback.includes('cold') ? 1 : 0;
 			postData["windy"] = feedback.includes('windy') ? 1 : 0;
 			postData["heavyair"] = feedback.includes('heavyair') ? 1 : 0;
-			postData["concentration"] = feedback.includes('concentration') ? 1 : 0;
+			postData["good"] = feedback.includes('good') ? 1 : 0;
 			postData["tired"] = feedback.includes('tired') ? 1 : 0;
 			postData["itchyeyes"] = feedback.includes('itchyeyes') ? 1 : 0;
 			postData["lighting"] = feedback.includes('lighting') ? 1 : 0;

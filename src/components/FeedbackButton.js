@@ -12,7 +12,7 @@ const FeedbackButton = props => {
 	return (
 		<div id={type.id} className={classes.feedbackButtonWrapper} onClick={(event) => props.onClick(event)}>
 			<div className={classes.feedbackButton + ' ' + (feedback.indexOf(type) !== -1 ? classes.feedbackButtonSelected : '')}>
-				<img src={require(`assets/buttons/${type}.svg`).default} alt={label} />
+				<img className={classes.feedbackButtonImage} src={require(`assets/buttons/${type}.svg`).default} alt={label} />
 			</div>
 			<Typography className={classes.feedbackButtonLabel}>{label}</Typography>
 		</div>

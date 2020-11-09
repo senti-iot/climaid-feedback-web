@@ -92,7 +92,7 @@ const Feedback = () => {
 							<FeedbackButton key={6} type="itchyeyes" label="Tørre øjne" feedback={feedback} onClick={() => handleClick("itchyeyes")} />
 						</Grid>
 						<Grid item xs={4} align="center">
-							<FeedbackButton key={7} type="doubt" label="I tvivl" feedback={feedback} onClick={() => handleClick("doubt")} />
+							<FeedbackButton key={7} type="good" label="Godt" feedback={feedback} onClick={() => handleClick("good")} />
 						</Grid>
 						<Grid item xs={4} align="center">
 							<FeedbackButton key={8} type="warm" label="For varmt" feedback={feedback} onClick={() => handleClick("warm")} />

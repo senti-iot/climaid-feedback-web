@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppBar, Toolbar, ButtonBase, Typography } from '@material-ui/core';
-import SettingsIcon from '@material-ui/icons/Settings';
+// import SettingsIcon from '@material-ui/icons/Settings';
 
 import logo from 'assets/logo.png';
 import mainStyles from 'styles/mainStyles';
@@ -12,9 +12,9 @@ const Header = props => {
 
 	}
 
-	const handleSettingsClick = () => {
+	// const handleSettingsClick = () => {
 
-	}
+	// }
 
 	return (
 		<AppBar position="static" elevation={0} className={classes.header}>
@@ -28,12 +28,12 @@ const Header = props => {
 					</ButtonBase>
 				</div>
 				<div className={classes.spacer}></div>
-				<ButtonBase
+				{/* <ButtonBase
 					disableRipple={true}
 					onClick={handleSettingsClick}
 				>
 					<SettingsIcon />
-				</ButtonBase>
+				</ButtonBase> */}
 			</Toolbar>
 			{props.roomName ? <Typography variant="h2" className={classes.roomName}>{props.roomName}</Typography> : ""}
 		</AppBar>

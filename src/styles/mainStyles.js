@@ -39,6 +39,9 @@ const mainStyles = makeStyles(theme => ({
 		backgroundColor: '#fff',
 		border: 'solid 2px #c2c2c2',
 	},
+	feedbackButtonImage: {
+		maxWidth: '53px',
+	},
 	feedbackButtonLabel: {
 		textAlign: 'center',
 		fontSize: '1.3rem',

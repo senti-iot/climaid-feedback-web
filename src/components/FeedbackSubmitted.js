@@ -13,7 +13,7 @@ const FeedbackSubmitted = () => {
 	const classes = mainStyles();
 	const history = useHistory();
 	const location = useLocation();
-	const [count, setCount] = useState(5);
+	const [count, setCount] = useState(1);
 	const [loading, setLoading] = useState(true);
 	const [alertShown, setAlertShown] = useState(false);
 
@@ -79,19 +79,8 @@ const FeedbackSubmitted = () => {
 					<Header roomName={room.name} />
 					<div className={classes.submittedIconWrapper}>
 						<Grid container direction="column" alignItems="center" justify="center">
-							<Grid item xs={12}>
-								<div className={classes.submittedIconBg}>
-									<img src={require(`assets/buttons/cold_large.svg`).default} alt="" />
-								</div>
-							</Grid>
 							<Grid item xs={12} style={{ marginTop: 20 }}>
-								<Typography variant="h3">Du oplever at her er det for koldt</Typography>
-							</Grid>
-							<Grid item xs={12} style={{ marginTop: 80 }}>
-								<Typography variant="h4">Tak for din besvarelse!</Typography>
-							</Grid>
-							<Grid item xs={12}>
-								<Typography variant="body2">Du omstilles om {count} sekunder</Typography>
+								<Typography variant="h3">Tak for din feedback</Typography>
 							</Grid>
 						</Grid>
 					</div>
